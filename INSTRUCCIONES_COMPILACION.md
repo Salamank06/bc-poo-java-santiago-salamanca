@@ -194,6 +194,45 @@ Una forma de organizar clases en carpetas con nombres únicos (ej: `com.aquafitn
 
 ---
 
+## 📦 Semana 08: Colecciones y Generics
+
+**📝 Descripción:** Sistema refactorizado con HashMap y ArrayList, eliminando todos los arrays. Incluye búsqueda O(1), filtrado y estadísticas avanzadas.
+
+**📂 Estructura:**
+```
+semana-08/
+├── src/
+│   └── com/
+│       └── aquafitness/
+│           ├── modelo/           (4 clases del dominio)
+│           ├── servicio/         (ActivityManager con colecciones)
+│           ├── excepciones/      (3 excepciones personalizadas)
+│           └── Main.java         (Menú interactivo)
+└── README.md
+```
+
+**🔧 Compilación:**
+```bash
+cd semana-08
+javac -encoding UTF-8 -d bin src/com/aquafitness/*/*.java src/com/aquafitness/*.java
+```
+
+**▶️ Ejecución:**
+```bash
+java -cp bin com.aquafitness.Main
+```
+
+**✨ Conceptos clave:**
+- `List<E>` y `ArrayList<E>` con Generics
+- `Map<K,V>` y `HashMap<K,V>` con Generics
+- Búsqueda O(1) con HashMap
+- Filtrado de colecciones
+- Estadísticas sobre colecciones
+- Sincronización HashMap + ArrayList
+- Menú interactivo completo
+
+---
+
 **Fecha:** 17/12/2024  
 **Autor:** Santiago Salamanca Narváez  
 **Proyecto:** Aqua Fitness - Bootcamp POO Java

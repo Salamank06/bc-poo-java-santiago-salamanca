@@ -1,44 +1,45 @@
-# 📦 Entrega: Semana 02 - Clases, Objetos y Colecciones
+# Semana 02: Clases y Objetos
 
-**Dominio:** Centro de Natación AQUA FITNESS
+## Descripción
 
----
+Esta semana se amplía el conocimiento sobre clases y objetos, creando múltiples clases que interactúan entre sí. Se modela un sistema más completo del centro de natación con al menos 4 clases diferentes más una clase gestora.
 
-## 🎯 Objetivos Cumplidos
+## Estructura de Archivos
 
-El objetivo de esta entrega fue expandir el sistema AQUA FITNESS, implementando relaciones de objetos y el manejo de colecciones dinámicas.
+```
+semana-02/
+├── README.md (este archivo)
+├── src/
+│   ├── Student.java
+│   ├── Instructor.java
+│   ├── Pool.java
+│   ├── Schedule.java
+│   ├── AquaticsCenter.java
+│   └── Main.java
+└── docs/
+```
 
-## ✅ Checklist de Entrega
+## Objetivos de Aprendizaje
 
-| Criterio | Estado | Detalle de la Implementación |
-| :--- | :--- | :--- |
-| **Mínimo 2 nuevas clases** | [X] Cumplido | **`Instructor.java`** y **`Pago.java`**. |
-| **ArrayList implementado** | [X] Cumplido | Usado en **`ClaseNatacion.java`** (`ArrayList<Estudiante>`) y en la clase gestora **`CentroNatacion.java`** (`ArrayList<ClaseNatacion>` y `ArrayList<Pago>`). |
-| **Relaciones entre objetos** | [X] Cumplido | **`ClaseNatacion`** tiene un `Instructor` y `ArrayList<Estudiante>`. **`Pago`** tiene un `Estudiante`. |
-| **Main.java funcional** | [X] Cumplido | El programa demuestra la inscripción de estudiantes, el registro de pagos y el cálculo de bonos por experiencia. |
-| **README.md completo** | [X] Cumplido | Este documento. |
-| **Código compila sin errores** | [X] Cumplido | Verificado en terminal. |
+- Crear múltiples clases relacionadas
+- Establecer relaciones entre objetos
+- Diseñar una clase gestora
+- Trabajar con arrays de objetos
 
----
-
-## 🧱 Estructura y Componentes de la Solución
-
-### Clases y Relaciones Implementadas
-
-| Archivo | Rol en el Proyecto | Implementación Clave |
-| :--- | :--- | :--- |
-| **`Instructor.java`** | Clase Nueva 1 | Atributos y método de negocio (`calcularBonoExperiencia`). |
-| **`Pago.java`** | Clase Nueva 2 | Registra transacciones (relación con `Estudiante`). |
-| **`CentroNatacion.java`** | Clase Gestora | Contiene `ArrayList<ClaseNatacion>` y `ArrayList<Pago>`. |
-| **`ClaseNatacion.java`** | Base (Modificada) | Contiene relación con `Instructor` y `ArrayList<Estudiante>`. |
-| **`Estudiante.java`** | Base (Corregida) | Clase que se relaciona con `Pago` y `ClaseNatacion`. |
-| **`Main.java`** | Driver | Prueba las inscripciones, pagos y resultados de la gestora. |
-
----
-
-## 🔄 Proceso de Entrega
-
-El código se implementó siguiendo la nomenclatura **`PascalCase`** para clases y **`camelCase`** para variables, y se subió con el siguiente comando:
+## Compilación y Ejecución
 
 ```bash
-git commit -m "feat(semana-02): Final delivery with corrected classes, relationships, and ArrayList in AQUA FITNESS."
+# Compilar
+javac -encoding UTF-8 src/*.java
+
+# Ejecutar
+java -cp src Main
+```
+
+## Conceptos Clave
+
+- Relaciones entre clases
+- Composición y agregación
+- Arrays de objetos
+- Métodos con parámetros
+

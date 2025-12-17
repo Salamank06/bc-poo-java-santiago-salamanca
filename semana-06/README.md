@@ -33,15 +33,44 @@ semana-06/
 - Organizar código en paquetes
 - Aplicar principios de diseño
 
-## Compilación y Ejecución
+## 🔧 Compilación y Ejecución
+
+### Opción 1: Usando scripts (Recomendado)
+
+**En Linux/Mac/Git Bash:**
+```bash
+cd semana-06
+bash compilar.sh
+cd src
+java Main
+```
+
+**En Windows (CMD):**
+```cmd
+cd semana-06
+compilar.bat
+cd src
+java Main
+```
+
+### Opción 2: Manual
 
 ```bash
-# Compilar
-javac -encoding UTF-8 src/abstractas/*.java src/interfaces/*.java src/implementaciones/*.java src/Main.java
+cd semana-06/src
+
+# Compilar todo junto
+javac -encoding UTF-8 interfaces/*.java abstractas/*.java implementaciones/*.java Main.java
+
+# Copiar clases al directorio actual (para que Java las encuentre)
+cp interfaces/*.class .
+cp abstractas/*.class .
+cp implementaciones/*.class .
 
 # Ejecutar
-java -cp src Main
+java Main
 ```
+
+**Nota:** El problema del classpath en Windows requiere que las clases estén en el mismo directorio que Main.class, por eso se copian.
 
 ## Conceptos Clave
 

@@ -12,3 +12,4 @@ public interface Reservable {
     int obtenerNumeroReservas();
 }
 
+

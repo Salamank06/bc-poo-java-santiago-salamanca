@@ -97,3 +97,4 @@ public class AquaAerobics extends AquaticActivity {
         return caloriesBurned;
     }
 }
+

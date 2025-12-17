@@ -81,3 +81,4 @@ public class SwimmingLesson extends AquaticActivity {
         return includesCertification;
     }
 }
+

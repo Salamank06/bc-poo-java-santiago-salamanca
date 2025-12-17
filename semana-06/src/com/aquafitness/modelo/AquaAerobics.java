@@ -96,3 +96,4 @@ public class AquaAerobics extends AquaticActivity implements Evaluable, Cancelab
     public String getIntensityLevel() { return intensityLevel; }
 }
 
+

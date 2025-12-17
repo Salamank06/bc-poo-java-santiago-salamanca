@@ -107,3 +107,4 @@ public class HydroTherapy extends AquaticActivity {
         return sessionsRecommended;
     }
 }
+

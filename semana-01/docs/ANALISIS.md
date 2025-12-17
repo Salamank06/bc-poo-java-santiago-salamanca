@@ -238,3 +238,4 @@ Este diseño orientado a objetos proporciona una base sólida para modelar el do
 
 El sistema es extensible: en futuras semanas puedo agregar clases como `Instructor`, `Pool`, `Payment`, `Schedule` para completar el modelo del negocio, manteniendo la coherencia y reutilizando los objetos ya creados.
 
+

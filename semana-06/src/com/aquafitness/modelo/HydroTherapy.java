@@ -124,3 +124,4 @@ public class HydroTherapy extends AquaticActivity implements Reservable, Evaluab
     public String getMedicalCondition() { return medicalCondition; }
 }
 
+

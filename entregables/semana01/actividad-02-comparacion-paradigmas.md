@@ -70,3 +70,4 @@
 
 [Reflexión personal sobre las diferencias entre paradigmas y cuál es más adecuado para el dominio del centro de natación]
 
+

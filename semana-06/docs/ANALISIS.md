@@ -636,3 +636,4 @@ La combinación de **clase abstracta** (para jerarquía y comportamiento común)
 **Versión:** 1.0  
 **Estado:** Completado ✓
 
+

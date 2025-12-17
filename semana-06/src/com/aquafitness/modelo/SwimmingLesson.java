@@ -100,3 +100,4 @@ public class SwimmingLesson extends AquaticActivity implements Reservable, Evalu
     public String getLevel() { return level; }
 }
 
+

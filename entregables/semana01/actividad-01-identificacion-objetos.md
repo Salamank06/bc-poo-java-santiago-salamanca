@@ -112,3 +112,4 @@ Centro de Natación "Aqua Fitness"
 
 [Reflexión sobre los objetos identificados y su relevancia en el dominio]
 
+

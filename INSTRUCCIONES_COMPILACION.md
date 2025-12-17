@@ -9,7 +9,7 @@
 | 03 | ✅ | Directa (mismo directorio) |
 | 04 | ✅ | Directa (mismo directorio) |
 | 05 | ✅ | Directa (mismo directorio) |
-| 06 | ✅ | Script (subcarpetas) |
+| 06 | ✅ | Paquetes (com.aquafitness.*) |
 | 07 | ✅ | Paquetes (com.aquafitness.*) |
 
 ---
@@ -35,54 +35,34 @@ java Main
 
 ---
 
-## 🔧 Semana 06: Con Subcarpetas
+## 🔧 Semana 06: Con Paquetes
 
 **Estructura:** 
 ```
 semana-06/src/
-├── Main.java
-├── abstractas/*.java
-├── interfaces/*.java
-└── implementaciones/*.java
+└── com/
+    └── aquafitness/
+        ├── Main.java
+        ├── modelo/*.java
+        └── interfaces/*.java
 ```
 
-### Método 1: Usando Script (Recomendado)
+### Compilar y Ejecutar
 
-**Linux/Mac/Git Bash:**
 ```bash
 cd semana-06
-bash compilar.sh
-cd src
-java Main
+
+# Compilar (crea bin/)
+javac -encoding UTF-8 -d bin src/com/aquafitness/interfaces/*.java src/com/aquafitness/modelo/*.java src/com/aquafitness/Main.java
+
+# Ejecutar (usa bin/ como classpath)
+java -cp bin com.aquafitness.Main
 ```
 
-**Windows (CMD):**
-```cmd
-cd semana-06
-compilar.bat
-cd src
-java Main
-```
-
-### Método 2: Manual
-
-```bash
-cd semana-06/src
-
-# Compilar
-javac -encoding UTF-8 interfaces/*.java abstractas/*.java implementaciones/*.java Main.java
-
-# Copiar clases al directorio actual
-cp interfaces/*.class .
-cp abstractas/*.class .
-cp implementaciones/*.class .
-
-# Ejecutar
-java Main
-```
-
-**¿Por qué copiar las clases?**  
-En Windows, Java tiene problemas con el classpath cuando las clases están en subcarpetas sin paquetes. Copiarlas al mismo directorio que Main.class resuelve el problema.
+**Notas:**
+- `-d bin`: Crea la estructura de paquetes en la carpeta `bin/`
+- `-cp bin`: Le dice a Java dónde encontrar las clases compiladas
+- `com.aquafitness.Main`: Nombre completo de la clase (con paquete)
 
 ---
 
